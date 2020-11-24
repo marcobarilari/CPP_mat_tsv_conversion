@@ -40,8 +40,8 @@ durations=durations*TR;     % Multiply the durations (in TR) to seconds
 t=table(onsets(I),durations(I),names(I),'VariableNames',{'onset','duration','condition'});
 
 % Export the table as csv and convert it to a tsv
-writetable(t,[matfile(1:end-4),'.csv'],'Delimiter','tab');
-movefile([matfile(1:end-4),'.csv'],[matfile(1:end-4),'.tsv'])
+writetable(t,[mat_file(1:end-4),'.csv'],'Delimiter','tab');
+movefile([mat_file(1:end-4),'.csv'],[mat_file(1:end-4),'.tsv'])
 
 
 end
